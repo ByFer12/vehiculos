@@ -1,10 +1,13 @@
 package com.cunoc.app.vehiculos;
 
 public abstract class Vehiculo {
-    private String Combustible; // diesel o gasolina
-    private int cantidadGalones; // de combustible
-    private int cantidadPasajeros;
-    private int velocidadMaxima;
+    protected String Combustible; //diesel o gasolina
+    protected int cantidadGalones; //de combustible
+    protected int cantidadPasajeros;
+    protected int velocidadMaxima;
+ 
+
+
 
     public Vehiculo() {
     }
@@ -53,4 +56,9 @@ public abstract class Vehiculo {
 
     public abstract void setAceleración(int aceleración);
 
+
+
+
+   
+    
 }
