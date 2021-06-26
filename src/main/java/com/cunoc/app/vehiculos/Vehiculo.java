@@ -64,8 +64,20 @@ public abstract class Vehiculo {
 
     }
 
+
+    @Override
+    public String toString() {
+        return "{" +
+            " Combustible='" + getCombustible() + "'" +
+            ", cantidadGalones='" + getCantidadGalones() + "'" +
+            ", cantidadPasajeros='" + getCantidadPasajeros() + "'" +
+            ", velocidadMaxima='" + getVelocidadMaxima() + "'" +
+            "}";
+    }
+
+
     public abstract double getAceleración();
 
-    public abstract void setAceleración(int aceleración);
+    public abstract void setAceleración(double aceleración);
 
 }

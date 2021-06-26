@@ -14,7 +14,7 @@ public class VehiculoCamioneta extends Vehiculo implements Giro, Camioneta{
     }
 
     @Override
-    public void setAceleración(int aceleración) {
+    public void setAceleración(double aceleración) {
         this.aceleración=aceleración;
         
     }
@@ -33,7 +33,12 @@ public class VehiculoCamioneta extends Vehiculo implements Giro, Camioneta{
         System.out.println("Soy un vehiculo de camioneta");        
     }
 
- 
+
+    @Override
+    public String toString() {
+        return super.toString()+" aceleración= " + getAceleración();
+    }
+    
 
 
     

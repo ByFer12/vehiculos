@@ -1,7 +1,7 @@
 package com.cunoc.app.vehiculos;
 
 public class VehiculoCarga extends Vehiculo implements Giro,Carga{
-    private double aceleración; 
+    private double aceleracion; 
 
 
     public VehiculoCarga(String Combustible, int cantidadGalones, int cantidadPasajeros, int velocidadMaxima){
@@ -10,14 +10,10 @@ public class VehiculoCarga extends Vehiculo implements Giro,Carga{
     @Override
     public double getAceleración() {
 
-        return this.aceleración;
+        return this.aceleracion;
     }
 
-    @Override
-    public void setAceleración(int aceleración) {
-        this.aceleración=aceleración;
-        
-    }
+   
     public void moverIzquierda() {
        System.out.println("Me estoy moviendo a la Izquierda muy despacio porque llevo carga");
         
@@ -30,5 +26,18 @@ public class VehiculoCarga extends Vehiculo implements Giro,Carga{
             System.out.println("Soy un vehiculo de carga");
         
     }
+    @Override
+    public void setAceleración(double aceleración) {
+        this.aceleracion=aceleración;
+        
+    }
+
+
+    @Override
+    public String toString() {
+        return super.toString()+ " aceleracion='" + aceleracion;
+    }
+
+ 
     
 }
