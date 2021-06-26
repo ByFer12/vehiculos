@@ -29,9 +29,11 @@ public class VehiculoCamioneta extends Vehiculo implements Giro, Camioneta{
         
     }
 
-    public void camoineta() {
+    public  void camoineta() {
         System.out.println("Soy un vehiculo de camioneta");        
     }
+
+ 
 
 
     

@@ -1,13 +1,10 @@
 package com.cunoc.app.vehiculos;
 
 public abstract class Vehiculo {
-    protected String Combustible; //diesel o gasolina
-    protected int cantidadGalones; //de combustible
+    protected String Combustible; // diesel o gasolina
+    protected int cantidadGalones; // de combustible
     protected int cantidadPasajeros;
     protected int velocidadMaxima;
- 
-
-
 
     public Vehiculo() {
     }
@@ -52,13 +49,23 @@ public abstract class Vehiculo {
         this.velocidadMaxima = velocidadMaxima;
     }
 
+    public static void pedirObjeto(Vehiculo vehic) {
+        if (vehic instanceof VehiculoCamioneta) {
+            System.out.println("El vehiculo es Camioneta");
+
+        }
+        if(vehic instanceof VehiculoCarga){
+            System.out.println("El vehiculo es de carga");
+        }
+        if(vehic instanceof VehiculoCarrera){
+            System.out.println("El vehiculo es de carrera");
+
+        }
+
+    }
+
     public abstract double getAceleración();
 
     public abstract void setAceleración(int aceleración);
 
-
-
-
-   
-    
 }

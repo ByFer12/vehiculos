@@ -1,10 +1,10 @@
 package com.cunoc.app.vehiculos;
 
-public class VejiculoCarrera extends Vehiculo implements Giro, Carrera{
+public class VehiculoCarrera extends Vehiculo implements Giro, Carrera{
 
     private double aceleración;
 
-    public VejiculoCarrera(String Combustible, int cantidadGalones, int cantidadPasajeros, int velocidadMaxima) {
+    public VehiculoCarrera(String Combustible, int cantidadGalones, int cantidadPasajeros, int velocidadMaxima) {
         super(Combustible,cantidadGalones,cantidadPasajeros,velocidadMaxima);
     }
 
